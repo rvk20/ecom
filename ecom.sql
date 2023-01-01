@@ -65,6 +65,8 @@ CREATE TABLE `user` (
 );
 /*Dodanie konta admina*/
 INSERT INTO `user`(`name`, `password`, `role`) VALUES ("admin","123","admin");
+/*Dodanie testowego pliku*/
+INSERT INTO `file`(`filename`) VALUES ("img");
 /*Wyzwalacz zmieniający stan produktu po dokonaniu zamówienia*/
 CREATE TRIGGER AI_PRODUCT
     AFTER INSERT ON ord_item
