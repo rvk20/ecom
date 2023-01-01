@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel administratora</title>
+    <link href="/Templates/Merchandise/style/admin.css" rel="stylesheet"/>
+</head>
+<body>
+<a style="position: absolute; right: 0px;" class="button" href="/logout">WYLOGUJ</a>
+<div name="product"  class="product">
+    <form action="/admin/product/create/add" method="POST" enctype="multipart/form-data">
+        <label for="name">Nazwa:</label><br>
+        <input type="text" id="name" name="name""><br><br>
+        <label for="name">Koszt:</label><br>
+        <input type="text" id="cost" name="cost" "><br><br>
+        <label for="name">Ilość:</label><br>
+        <input type="text" id="quantity" name="quantity" "><br><br>
+        <label for="name">Obraz:</label><br>
+        <input type="file" id="img" name="img" accept="image/*"><br><br>
+        <label for="name">Kategoria:</label><br>
+        <select name="categories" id="categories" class="categories">
+            <option value=""></option>
+        </select><br><br>
+        <input type="submit" value="Dodaj">
+    </form>
+
+</div>
+</body>
+<footer>
+<script src="/Templates/Merchandise/script/admin/select_category.js"></script>
+</footer>
+</html>

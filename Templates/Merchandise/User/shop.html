@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep</title>
+    <link href="/Templates/Merchandise/style/card.css" rel="stylesheet"/>
+    <link href="/Templates/Merchandise/style/category.css" rel="stylesheet"/>
+</head>
+<body>
+<table>
+    <tr>
+        <td  width="200">
+            <div class="categories">
+
+            </div>
+        </td>
+        <td width="2000">
+            <div class="products">
+
+            </div>
+        </td>
+        <td width="40">
+            <a class="right-btn"  href="/logout">wyloguj</a><br><br>
+            <a class="right-btn"  href="/shop?c=1">sklep</a><br><br>
+            <a class="right-btn"  href="/cart">koszyk</a><br><br>
+            <a class="right-btn"  href="/history">zamówienia</a><br><br>
+        </td>
+    </tr>
+</table>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="form-comments"></div>
+        <div class="comments"><p></p></div>
+    </div>
+</div>
+</body>
+<footer>
+<script src="/Templates/Merchandise/script/executeAsync.js"></script>
+<script src="/Templates/Merchandise/script/user/show_products.js"></script>
+<script src="/Templates/Merchandise/script/user/modal.js"></script>
+<script src="/Templates/Merchandise/script/user/show_categories.js"></script>
+</footer>
+</html>

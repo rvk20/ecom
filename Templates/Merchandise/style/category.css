@@ -1,0 +1,28 @@
+.category {
+    background-color: coral;
+    color: white;
+    padding: 14px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+td {
+    vertical-align: top;
+}
+a:hover, a:active {
+    background-color: red;
+}
+.right-btn {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}

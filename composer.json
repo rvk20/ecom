@@ -1,0 +1,16 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\Core\\" : "src/Core",
+      "App\\Controller\\Auth\\": "src/Controller/Auth",
+      "App\\Controller\\Merchandise\\": "src/Controller/Merchandise",
+      "App\\Models\\Auth\\": "src/Models/Auth",
+      "App\\Model\\Merchandise\\": "src/Models/Merchandise",
+      "Templates\\Auth\\": "Templates/Auth",
+      "App\\Config\\": "src/Config"
+    }
+  },
+  "require": {
+    "ext-json": "*"
+  }
+}

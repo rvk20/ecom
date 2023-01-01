@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep</title>
+    <link href="/Templates/Merchandise/style/category.css" rel="stylesheet"/>
+    <link href="/Templates/Merchandise/style/history.css" rel="stylesheet"/>
+    <link href="/Templates/Merchandise/style/card.css" rel="stylesheet"/>
+</head>
+<body>
+<h2>Zamówienia:</h2>
+<table>
+    <tr>
+        <td width="2000">
+            <table class="orders"></table>
+        </td>
+        <td width="40" class="left-side">
+            <a class="right-btn"  href="/logout">wyloguj</a><br><br>
+            <a class="right-btn"  href="/shop?c=1">sklep</a><br><br>
+            <a class="right-btn"  href="/cart">koszyk</a><br><br>
+            <a class="right-btn"  href="/history">zamówienia</a><br><br>
+        </td>
+    </tr>
+</table>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="products"></div>
+    </div>
+</div>
+</body>
+<footer>
+<script src="/Templates/Merchandise/script/user/show_history.js"></script>
+<script src="/Templates/Merchandise/script/user/modal.js"></script>
+</footer>
+</html>

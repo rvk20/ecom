@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel administratora</title>
+    <link href="/Templates/Merchandise/style/admin.css" rel="stylesheet"/>
+</head>
+<body>
+<a style="position: absolute; right: 0px;" class="button" href="/logout">WYLOGUJ</a>
+<br><br>
+<table>
+    <tr>
+        <td>
+            <b>Edycja produktu</b>
+        </td>
+        <td>
+            Nowy produkt
+        </td>
+        <td>
+            Zamówienia
+        </td>
+    </tr>
+    <tr>
+        <td width="700">
+                <select name="categories" id="categories" class="categories">
+                    <option value=""></option>
+                </select>
+                <select name="products"  class="products">
+                    <option value=""></option>
+                </select>
+        </td>
+        <td>
+            <a class="button" href="/admin/product/create">PRZEJDŹ</a>
+        </td>
+        <td>
+            <a class="button" href="/admin/orders">PRZEJDŹ</a>
+        </td>
+    </tr>
+</table>
+<br>
+</body>
+<footer>
+<script src="/Templates/Merchandise/script/admin/select_category.js"></script>
+<script src="/Templates/Merchandise/script/admin/select_product.js"></script>
+<script src="/Templates/Merchandise/script/executeAsync.js"></script>
+<script src="/Templates/Merchandise/script/changeSelectElement.js"></script>
+<script src="/Templates/Merchandise/script/admin/selected_category.js"></script>
+</footer>
+</html>
