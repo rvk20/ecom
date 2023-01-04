@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Logowanie</title>
+    <link href="/Templates/Auth/style.css" rel="stylesheet"/>
 </head>
 <body>
-
-<h2>Panel logowania</h2>
-
-<form action="/auth" method="POST">
-    <label for="name">Login:</label><br>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="password">Hasło:</label><br>
-    <input type="password" id="password" name="password"><br><br>
-    <input type="submit" value="Zaloguj się">
-</form>
-<br>
-Nie masz konta? <a href="/register">Zarejestruj się!</a>
+    <div class="login-panel">
+        <h2>Panel logowania</h2>
+        <p class="validation"></p>
+            <form action="/auth" method="POST">
+                <label for="name">nazwa użytkownika:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="password">hasło:</label><br>
+                <input type="text" id="password" name="password"><br><br>
+                <input type="submit" value="Zaloguj się">
+            </form>
+            <br>
+        Nie masz konta? <a href="/register">Zarejestruj się!</a>
+    </div>
 </body>
+<footer>
+    <script src="/Templates/Auth/validation.js"></script>
+</footer>
 </html>
-
