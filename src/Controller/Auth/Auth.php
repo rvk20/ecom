@@ -1,8 +1,6 @@
 <?php
 namespace App\Controller\Auth;
 
-//include ("../../../vendor/autoload.php");
-
 use App\Models\Auth\User;
 use App\Models\Auth\Session;
 
@@ -14,7 +12,7 @@ class Auth
             $user->create();
             redirect("/");
         }
-        redirect("/register");
+        redirect("/register?v=e");
     }
 
     public function login(): void {
@@ -24,6 +22,7 @@ class Auth
             $session->registerStart();
             redirect("/");
         }
+        redirect("/login?v=f");
     }
 
     public function logout(): void {
@@ -42,8 +41,9 @@ class Auth
     }
 
     private function credentialsAreCorrect(string $name, string $password): bool {
-        $user = User::findByName($name);
-        if($password===$user->getPassword())
+        if(!User::findByName($name))
+            return false;
+        if($password===User::findByName($name)->getPassword())
             return true;
         else
             return false;
