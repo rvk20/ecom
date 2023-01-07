@@ -13,7 +13,7 @@ class Carts
         $quantity = $_POST['quantity'];
         if($_SESSION['cart'])
             $element = findCartElement($_SESSION['cart'], $_POST['id']);
-        if($element)
+        if($element ||| $element === 0)
             $quantity += $_SESSION['cart'][$element]['quantity'];
         $product = Product::getOneById($_POST['id']);
         if(0 === $product->getQuantity())
